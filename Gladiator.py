@@ -30,6 +30,9 @@ class Gladiator:
         weapon_item_damage = item.get_weapon_damage()
         self.weapon_type = weapon_item_damage[0]
         self.weapon_bonus = weapon_item_damage[1]
+        print('gladiator.get_weapon() called; weapon selected')
+        self.determine_attack()
+        print('gladiator.determine_attack() called; attack determined')
 
     def determine_attack(self):
         """
@@ -39,8 +42,8 @@ class Gladiator:
         number = random.randint(1, 10)
         weapon_bonus = Gladiator.weapon_bonus
         final_attack = (self.attack + weapon_bonus) // 2 + number
-        print(f'Initial attack: {self.attack}')
-        print(f'random number: {number}')
-        print(f'weapon_bonus: {weapon_bonus}')
-        print(f'Final attack: {final_attack}')
+        # print(f'Initial attack: {self.attack}')
+        # print(f'random number: {number}')
+        # print(f'weapon_bonus: {weapon_bonus}')
+        # print(f'Final attack: {final_attack}')
 
