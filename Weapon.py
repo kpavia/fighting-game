@@ -22,7 +22,7 @@ class Weapon:
         """
         This method determines how much damage the weapon will do by passing the weapon as a key into a dictionary
         and retrieving the value.
-        Returns: A tuple with the string weapon name in index 0 and the integer weapon damage in index 1.gith
+        Returns: A tuple with the string weapon name in index 0 and the integer weapon damage in index 1.
         """
         item = self.get_weapon()
         damage = self.weapons_dict[item]
